@@ -6,7 +6,7 @@ library(rstatix)
 library(ggpubr)
 
 #list of all unique ecoregions in the world
-poly<-readOGR(dsn="/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/wwf_terr_ecos", layer="wwf_terr_ecos")
+poly<-readOGR(dsn="~/wwf_terr_ecos", layer="wwf_terr_ecos")
 centroids <- coordinates(poly)
 
 ecodf <- data.frame(
@@ -39,7 +39,7 @@ ecodf$zone <- factor(ecodf$zone, levels = c("tropic", "subtropic", "temperate", 
 ecodf <- ecodf %>% distinct(ECO_NAME, .keep_all = TRUE)
 
 #occurrence data
-occdf <- read.csv("/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/cleistogamy_native_occ.csv")
+occdf <- read.csv("/cleistogamy_native_occ.csv")
 occdf$genus <- gsub( " .*$", "", occdf$real_species_name)
 occdf$zone <- "polar"
 occdf$zone[abs(occdf$lat) > 35 & abs(occdf$lat) < 66.5] <- "temperate"
