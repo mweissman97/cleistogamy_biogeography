@@ -51,8 +51,8 @@ Data files:
 * Filtered occurrence data w/ ecoregion and climate data
 
 Code files:
-* generate occ dataset
-* filter + add biome data
+* [create_occurrence_data.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/create_occurrence_data.R): creates occurrence dataset
+* [cleistogamy_occ_filtering.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/cleistogamy_occ_filtering.R): reconcile species names + double check occurrence coordinates using the known native ranges. Also adds biome/ecoregions.
 * presence vs. absence analyses
   * Used to make Fig. 1, Fig. 2, Supplemental Table 1
 * complete vs. dimorphic analyses
