@@ -7,7 +7,7 @@ library(raster)
 library(ggplot2)
 
 #load data
-occdf <- read.csv("/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/cleistogamy_native_occ_norm.csv")
+occdf <- read.csv("~/cleistogamy_native_occ.csv")
 occdf$genus <- gsub( " .*$", "", occdf$real_species_name)
 occdf$zone <- "polar"
 occdf$zone[abs(occdf$lat) > 35 & abs(occdf$lat) < 66.5] <- "temperate"
