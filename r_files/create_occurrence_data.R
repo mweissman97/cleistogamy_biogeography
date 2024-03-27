@@ -6,8 +6,7 @@ library(dplyr)
 library(tidyr)
 
 #load cleistogamous species data from Culley 2007
-path_to_files <- "~/"
-bh_species_raw <- read.csv(paste(path_to_files,"CL_SpeciesList_100205 - CL_review.csv", sep = ""))
+bh_species_raw <- read.csv("CL_SpeciesList_100205 - CL_review.csv")
 
 # Function to query GBIF and retrieve occurrence records
 retrieve_occurrences <- function(species_list) {
