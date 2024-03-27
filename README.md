@@ -47,8 +47,8 @@ Data Sources:
 
 ### Constructing and analyzing biogeographic dataset in R <a name="r-biogeo"></a>
 Data files:
-* Full occurrence data
-* Filtered occurrence data w/ ecoregion and climate data
+* [angiosperm_cleistogamy_full.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/f89151afeb7edcc9d49347bf537e40686b24e8f8/csv_files/angiosperm_cleistogamy_full.csv): full occurrence data
+* [cleistogamy_native_occ.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/f89151afeb7edcc9d49347bf537e40686b24e8f8/csv_files/cleistogamy_native_occ.csv): filtered occurrence data w/ ecoregion data
 
 Code files:
 * [create_occurrence_data.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/create_occurrence_data.R): creates occurrence dataset
