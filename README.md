@@ -52,10 +52,10 @@ Data files:
 
 Code files:
 * [create_occurrence_data.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/create_occurrence_data.R): creates occurrence dataset
-* [cleistogamy_occ_filtering.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/cleistogamy_occ_filtering.R): reconcile species names + double check occurrence coordinates using the known native ranges. Also adds biome/ecoregions.
-* presence vs. absence analyses
+* [cleistogamy_occ_filtering.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/cleistogamy_occ_filtering.R): reconcile species names + double check occurrence coordinates using the known native ranges (Kew). Also adds biome/ecoregions (WWF).
+* [cleist_presence.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/b30f15d3fdd3259a3b9d6e8ae3c95c850247e4a9/r_files/cleist_presence.R): analyze ecoregions where cleistogamy is present vs. absent.
   * Used to make Fig. 1, Fig. 2, Supplemental Table 1
-* complete vs. dimorphic analyses
+* [cleist_strategy_differences.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/b30f15d3fdd3259a3b9d6e8ae3c95c850247e4a9/r_files/cleist_strategy_differences.R): used to analyze differences in distribution of species occurrence by strategy type. For both differences between complete and dimorphic cleistogamy, as well as differences by pollinator mode (Poaceae vs. other taxa).
   * Used to make Fig. 3, Supplemental Table 2
 * USA climate analysis
   * Used to make Supplemental Fig. 1 
