@@ -51,14 +51,20 @@ Data files:
 * Filtered occurrence data w/ ecoregion and climate data
 
 Code files:
-* generate occ dataset + filter
+* generate occ dataset
+* filter + add biome data
 * presence vs. absence analyses
+  * Used to make Fig. 1, Fig. 2, Supplemental Table 1
 * complete vs. dimorphic analyses
+  * Used to make Fig. 3, Supplemental Table 2
+* USA climate analysis
+  * Used to make Supplemental Fig. 1 
 
 ### Latitudinal Markov model <a name="markov"></a>
 Code files:
 * matlab markov matrix generation
 * r matrix analyses
+  * Used to make Fig. 4
 
 <!-- CONTACT -->
 ## Contact <a name="contact"></a>
