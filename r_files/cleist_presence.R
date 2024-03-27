@@ -39,7 +39,7 @@ ecodf$zone <- factor(ecodf$zone, levels = c("tropic", "subtropic", "temperate", 
 ecodf <- ecodf %>% distinct(ECO_NAME, .keep_all = TRUE)
 
 #occurrence data
-occdf <- read.csv("/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/cleistogamy_native_occ_norm.csv")
+occdf <- read.csv("/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/cleistogamy_native_occ.csv")
 occdf$genus <- gsub( " .*$", "", occdf$real_species_name)
 occdf$zone <- "polar"
 occdf$zone[abs(occdf$lat) > 35 & abs(occdf$lat) < 66.5] <- "temperate"
