@@ -53,7 +53,9 @@ Data files:
 
 Code files:
 * [create_occurrence_data.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/create_occurrence_data.R): creates occurrence dataset
+  * Output: [angiosperm_cleistogamy_full.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/f89151afeb7edcc9d49347bf537e40686b24e8f8/csv_files/angiosperm_cleistogamy_full.csv)
 * [cleistogamy_occ_filtering.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/cleistogamy_occ_filtering.R): reconcile species names + double check occurrence coordinates using the known native ranges (Kew). Also adds biome/ecoregions (WWF).
+  * Output: [cleistogamy_native_occ.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/f89151afeb7edcc9d49347bf537e40686b24e8f8/csv_files/cleistogamy_native_occ.csv)
 * [cleist_presence.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/b30f15d3fdd3259a3b9d6e8ae3c95c850247e4a9/r_files/cleist_presence.R): analyze ecoregions where cleistogamy is present vs. absent.
   * Used to make Fig. 1, Fig. 2, Supplemental Table 1
 * [cleist_strategy_differences.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/b30f15d3fdd3259a3b9d6e8ae3c95c850247e4a9/r_files/cleist_strategy_differences.R): used to analyze differences in distribution of species occurrence by strategy type. For both differences between complete and dimorphic cleistogamy, as well as differences by pollinator mode (Poaceae vs. other taxa).
@@ -63,8 +65,9 @@ Code files:
 
 ### Latitudinal Markov model <a name="markov"></a>
 Code files:
-* matlab markov matrix generation
-* r matrix analyses
+* [cleist_markov_creator.m](https://github.com/mweissman97/cleistogamy_biogeography/blob/3f11193cad4316915aa129d0cff02fbbba92ced0/markov_model/cleist_markov_creator.m): MATLAB file that performs matrix multiplication necessary to find stationary distribution of transition matrices across parameter space
+  * Output: [matlab_markov_out.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/3f11193cad4316915aa129d0cff02fbbba92ced0/markov_model/matlab_markov_out.csv)
+* [cleist_markov.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/a7a985f5996cdaaf20ba2586ebb6537e6890d570/markov_model/cleist_markov.R): analyzes matrix and performs simulations to assign points in parameter space to latitudinal zones.
   * Used to make Fig. 4
 
 <!-- CONTACT -->
