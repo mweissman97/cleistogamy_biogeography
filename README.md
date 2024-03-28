@@ -49,6 +49,7 @@ Data Sources:
 Data files:
 * [angiosperm_cleistogamy_full.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/f89151afeb7edcc9d49347bf537e40686b24e8f8/csv_files/angiosperm_cleistogamy_full.csv): full occurrence data
 * [cleistogamy_native_occ.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/f89151afeb7edcc9d49347bf537e40686b24e8f8/csv_files/cleistogamy_native_occ.csv): filtered occurrence data w/ ecoregion data
+* [cleistogamy_us_prefilter.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/d631d3ae9fd872d5d20f4fd886db11db91642a99/csv_files/cleistogamy_us_prefilter.csv): unfiltered occurrences in USA, along with PRISM 40 year data summaries
 
 Code files:
 * [create_occurrence_data.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/91a436c32ee6f2f351b4e1e9f211aaa9a72db9bd/r_files/create_occurrence_data.R): creates occurrence dataset
@@ -57,7 +58,7 @@ Code files:
   * Used to make Fig. 1, Fig. 2, Supplemental Table 1
 * [cleist_strategy_differences.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/b30f15d3fdd3259a3b9d6e8ae3c95c850247e4a9/r_files/cleist_strategy_differences.R): used to analyze differences in distribution of species occurrence by strategy type. For both differences between complete and dimorphic cleistogamy, as well as differences by pollinator mode (Poaceae vs. other taxa).
   * Used to make Fig. 3, Supplemental Table 2
-* USA climate analysis
+* [climate_correlations.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/d631d3ae9fd872d5d20f4fd886db11db91642a99/r_files/climate_correlations.R): analyzes correlations between climatic variables. This includes correlation between w/in year data (from WorldClim) and b/w year data (from PRISM) within the USA. Also includes correlations between all 19 WorldClim bioclimatic variables.
   * Used to make Supplemental Fig. 1 
 
 ### Latitudinal Markov model <a name="markov"></a>
