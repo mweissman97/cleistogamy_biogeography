@@ -1,4 +1,4 @@
-markov <- read.csv("/Users/mayaweissman/Documents/GitHub/SignInversionNoise/matlab/1223cleist_simple_markov.csv")
+markov <- read.csv("matlab_markov_out.csv")
 markov$c_e_ratio <- markov$cleist/markov$ext
 
 manual_zones <- function(r) {
