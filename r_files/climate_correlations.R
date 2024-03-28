@@ -7,7 +7,7 @@ library(ggplot2)
 
 #Using PRISM 40 year climate data, compare within year variability to between year variability
 #because of PRISM's scope, this analysis is constrained to us
-usclim <- read.csv("/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/cleistogamy_us_prefilter.csv")
+usclim <- read.csv("cleistogamy_us_prefilter.csv")
 
 mean(usclim$ppt_mean)
 mean(usclim$temp_var)
@@ -69,7 +69,7 @@ ggplot(data = occdfclim, aes(x = temp_var, y = ppt_var)) +
 
 
 #for worldwide climate data, find correlation b/w all worldclim bioclimatic variables
-occdf <- read.csv("/Users/mayaweissman/Documents/GitHub/Chapter3/ch3_csvfiles/cleistogamy_native_occ.csv")
+occdf <- read.csv("/cleistogamy_native_occ.csv")
 cc2 <- occdf[,c(11,10)]
 coords_spat2 <- SpatialPointsDataFrame(coords=cc2,data=occdf,proj4string=CRS("+init=epsg:4326"))
 clim_vals <- raster::extract(climate,coords_spat2)
