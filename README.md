@@ -70,6 +70,12 @@ Code files:
 * [cleist_markov.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/a7a985f5996cdaaf20ba2586ebb6537e6890d570/markov_model/cleist_markov.R): analyzes matrix and performs simulations to assign points in parameter space to latitudinal zones.
   * Used to make Fig. 4
 
+### PRISM data downloading and preprocessing
+Code files:
+* unzip_github.R: unzips PRISM data (yearly precipitation and temperature), which are zipped files
+* getclimate1_github.R: gets yearly precipitation and temperature based on occurrence locations
+* getclimate2_github.R: combines precipitation and temperature from different years and generates a spatial point data frame in R
+
 <!-- CONTACT -->
 ## Contact <a name="contact"></a>
 
