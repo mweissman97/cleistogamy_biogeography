@@ -10,6 +10,7 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#r-biogeo">Constructing and analyzing biogeographic dataset in R</a></li>
+        <li><a href="#us-prism">Generating US climate dataset from PRISM</a></li>
         <li><a href="#markov">Latitudinal Markov model</a></li>
       </ul>
     </li>
@@ -44,6 +45,7 @@ Data Sources:
 * [Kew Plants of the World Online](https://powo.science.kew.org/): known native ranges of plant species
 * [WWF Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world): ecoregion and biome data
 * [WorldCLim2](https://www.worldclim.com/version2): bioclimatic data (e.g. temperature and precipitation)
+* [PRISM](https://prism.oregonstate.edu/recent/): annual daily mean precipitation and temperature for the USA from 1982 - 2022.
 
 ### Constructing and analyzing biogeographic dataset in R <a name="r-biogeo"></a>
 Data files:
@@ -61,7 +63,17 @@ Code files:
 * [cleist_strategy_differences.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/b30f15d3fdd3259a3b9d6e8ae3c95c850247e4a9/r_files/cleist_strategy_differences.R): used to analyze differences in distribution of species occurrence by strategy type. For both differences between complete and dimorphic cleistogamy, as well as differences by pollinator mode (Poaceae vs. other taxa).
   * Used to make Fig. 3, Supplemental Table 2
 * [climate_correlations.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/d631d3ae9fd872d5d20f4fd886db11db91642a99/r_files/climate_correlations.R): analyzes correlations between climatic variables. This includes correlation between w/in year data (from WorldClim) and b/w year data (from PRISM) within the USA. Also includes correlations between all 19 WorldClim bioclimatic variables.
-  * Used to make Supplemental Fig. 1 
+  * Used to make Supplemental Fig. 1
+ 
+### PRISM data downloading and preprocessing <a name="us-prism"></a>
+Data Files:
+* [PRISM](https://prism.oregonstate.edu/recent/): annual daily mean precipitation and temperature from 1982 - 2022.
+
+Code files:
+* [unzip_github.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/941f0665612165a9cdccf77813fca9bd5625a4d2/us_prism/unzip_github.R): unzips PRISM data (yearly precipitation and temperature), which are downloaded as zipped files
+* [getclimate1_github.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/941f0665612165a9cdccf77813fca9bd5625a4d2/us_prism/getclimate1_github.R): gets yearly precipitation and temperature based on occurrence locations
+* [getclimate2_github.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/941f0665612165a9cdccf77813fca9bd5625a4d2/us_prism/getclimate2_github.R): combines precipitation and temperature from different years and generates a spatial point data frame in R
+
 
 ### Latitudinal Markov model <a name="markov"></a>
 Code files:
@@ -69,12 +81,6 @@ Code files:
   * Output: [matlab_markov_out.csv](https://github.com/mweissman97/cleistogamy_biogeography/blob/3f11193cad4316915aa129d0cff02fbbba92ced0/markov_model/matlab_markov_out.csv)
 * [cleist_markov.R](https://github.com/mweissman97/cleistogamy_biogeography/blob/a7a985f5996cdaaf20ba2586ebb6537e6890d570/markov_model/cleist_markov.R): analyzes matrix and performs simulations to assign points in parameter space to latitudinal zones.
   * Used to make Fig. 4
-
-### PRISM data downloading and preprocessing
-Code files:
-* unzip_github.R: unzips PRISM data (yearly precipitation and temperature), which are zipped files
-* getclimate1_github.R: gets yearly precipitation and temperature based on occurrence locations
-* getclimate2_github.R: combines precipitation and temperature from different years and generates a spatial point data frame in R
 
 <!-- CONTACT -->
 ## Contact <a name="contact"></a>
