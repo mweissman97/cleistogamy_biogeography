@@ -1,5 +1,5 @@
 # Balancing the risks of mating: biogeographic evidence of cleistogamy as a bet hedging strategy
-[Link to preprint to come]().
+[Link to preprint](https://www.biorxiv.org/content/10.1101/2024.03.28.587200v1).
 
 <!-- TABLE OF CONTENTS -->
 <details>
